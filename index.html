@@ -1,241 +1,371 @@
-﻿  <!DOCTYPE html>
-  <html>
+﻿<!DOCTYPE html>
+<html>
   <head>
 
-  	<meta name="description" content="Simplest possible examples of HTML, CSS and JavaScript." />
-  	<meta name="author" content="//samdutton.com">
-  	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  	<meta itemprop="name" content="simpl.info: simplest possible examples of HTML, CSS and JavaScript">
-  	<meta itemprop="image" content="images/icon_192x192.png">
-  	<meta name="mobile-web-app-capable" content="yes">
-  	<meta id="theme-color" name="theme-color" content="#fff">
+    <meta name="description" content="Sam Dutton is a web developer working for Google in London." />
+    <meta name="author" content="//samdutton.com">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta itemprop="name" content="Sam Dutton is a web developer working for Google in London.">
+    <meta itemprop="image" content="images/icon192.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#fff">
 
-  	<base target="_blank">
+    <base target="_blank">
 
-  	<title>Sam Dutton</title>
+    <title>Sam Dutton</title>
 
-  	<link rel="stylesheet" href="css/index.css" />
+    <link rel="canonical" href="https://samdutton.com">
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+    window.ga = window.ga || function() {
+      (ga.q=ga.q||[]).push(arguments);
+    };
+    ga.l=+new Date;
+    ga('create', 'UA-2630780-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <style>
+    a {
+    color: #15c;
+    font-weight: 300;
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    a#twitter {
+    color: black;
+    display: block;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    }
+
+    body {
+    font-family: sans-serif;
+    margin: 40px;
+    }
+
+    div.borderBottom {
+    border-bottom: 1px solid #666;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    }
+
+    div#blurb {
+    border-bottom: 1px solid #666;
+    margin-bottom: 25px;
+    padding-bottom: 0;
+    }
+
+    div#container {
+    margin: 0 auto 0 auto;
+    max-width: 800px;
+    }
+
+    div#highlight {
+    border: 1px solid #666;
+    font-size: 1.2em;
+    margin: 0 0 50px 0;
+    padding: 1em 1em 0 1em;
+    }
+
+    a#twitter div {
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    top: -13px;
+    }
+
+    a#twitter div:hover {
+    color: #1da1f2;
+    }
+
+    h1 {
+    line-height: 1.3em;
+    margin: 0 0 25px 0;
+    padding: 0;
+    }
+
+    img#samDutton {
+    float: right;
+    margin: 0 0 15px 10px;
+    max-width: 400px;
+    position: relative;
+    top: 7px;
+    width: 45vw;
+    }
+
+    li {
+    margin: 0 0 0.5em 0;
+    }
+
+    p {
+    line-height: 1.79em;
+    margin: 0 0 1em 0;
+    }
+
+    p.border {
+    border: 1px solid #ccc;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    width: 310px;
+    }
+
+    select#australianThingSelector {
+    display: block;
+    margin: 0 0 10px 0;
+    }
+
+    a#twitter svg {
+    height: 40px;
+    width: 40px;
+    }
+
+    ul {
+    list-style: square;
+    margin: 15px 15px 15px -23px;
+    }
+
+
+    </style>
+
 
   </head>
 
   <body>
 
-  	<div id="container">
+    <div id="container">
 
-    <div id="highlight">
-      <p>Check out my <strong><a href="https://www.medianews.me" title="Newsletter archive">Media Newsletter</a></strong>: a monthly roundup of news about audio, video and realtime communications.</p>
-      <p>Sign up at <a href="https://bit.ly/signupmedia" title="Newsletter signup form">bit.ly/signupmedia</a>.</p>
-      <p>Archive at <a href="https://medianews.me" title="Newsletter archive">medianews.me</a>.</p>
-    </div>
+      <div id="highlight">
+        <p>Check out my <strong><a href="https://www.medianews.me" title="Newsletter archive">Media Newsletter</a></strong>: a monthly roundup of news about audio, video and realtime communications.</p>
+        <p>Sign up at <a href="https://bit.ly/signupmedia" title="Newsletter signup form">bit.ly/signupmedia</a>.</p>
+        <p>Archive at <a href="https://medianews.me" title="Newsletter archive">medianews.me</a>.</p>
+      </div>
 
-  		<div id="blurb">
+      <div id="blurb">
 
-  			<img id="samDutton" src="images/samDuttonDevFest.jpg" alt="Sam Dutton at the 2011 Barcelona Dev Fest" title="Sam Dutton at the 2011 Barcelona Dev Fest" />
+        <img id="samDutton" src="images/samDuttonDevFest.jpg" alt="Sam Dutton at the 2011 Barcelona Dev Fest" title="Sam Dutton at the 2011 Barcelona Dev Fest" />
 
-  			<h1>Sam Dutton</h1>
+        <h1>Sam Dutton</h1>
 
-  			<a href="https://twitter.com/sw12" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @sw12</a>
-  			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <a id="twitter" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fsimpl.info%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=sw12&tw_p=followbutton" rel="noopener" target="_blank" title="Follow @sw12"><svg viewbox="0 0 400 400"><title>Follow @sw12</title><path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#1da1f2" /></svg> <div>Follow on Twitter</div></a>
 
-  			<p>I am a Developer Advocate for Google Chrome.</p>
+        <p>I am a Developer Advocate for Google Chrome.</p>
 
-  			<p>I maintain <a href="https://simpl.info" title="simpl.info website">simpl.info</a>, which provides simplest possible examples of HTML, CSS and JavaScript.</p>
+        <p>I maintain <a href="https://simpl.info" title="simpl.info website">simpl.info</a>, which provides simplest possible examples of HTML, CSS and JavaScript.</p>
 
-  			<p>I grew up in South Australia, went to university in Sydney, and have lived since 1986 in London.</p>
+        <p>I grew up in South Australia, went to university in Sydney, and have lived since 1986 in London.</p>
 
-  			<p>From 2008 to 2010 I was a Senior Engineer at <a href="https://www.bbc.co.uk/rd" title="Prototyping homepage">BBC&nbsp;R&amp;D Prototyping</a> and WP5&nbsp;Technical&nbsp;Lead for the <a href="https://torrentfreak.com/p2p-next-introduces-live-bittorrent-streaming-080718/" title="P2P-Next Wikipedia article">P2P-Next</a> project.</p>
+        <p>From 2008 to 2010 I was a Senior Engineer at <a href="https://www.bbc.co.uk/rd" title="Prototyping homepage">BBC&nbsp;R&amp;D Prototyping</a> and WP5&nbsp;Technical&nbsp;Lead for the <a href="https://torrentfreak.com/p2p-next-introduces-live-bittorrent-streaming-080718/" title="P2P-Next Wikipedia article">P2P-Next</a> project.</p>
 
-  			<p>From 1999 to 2008 I worked for <a href="https://www.itn.co.uk" title="Independent Television News website">ITN</a>, where I built the <a href="images/shotlister_shotlisting.jpg" title="Photograph of a shotlister using Shotlister to catalogue ITV news">Shotlister</a> news video cataloguing application using the <a href="https://en.wikipedia.org/wiki/Qt_%28toolkit%29" title="Wikipedia article about Qt">Qt framework</a>. From 1991 to 1998 that I was a typesetter and Mac systems manager at Decca Records. For several year before that, I worked as a 'temp sec', where I learned a lot about UI and UX from the receiving end. Before that, I had worked for a 18 months at Picador Books, and previously for other publishers in Sydney.</p>
+        <p>From 1999 to 2008 I worked for <a href="https://www.itn.co.uk" title="Independent Television News website">ITN</a>, where I built the <a href="images/shotlister_shotlisting.jpg" title="Photograph of a shotlister using Shotlister to catalogue ITV news">Shotlister</a> news video cataloguing application using the <a href="https://en.wikipedia.org/wiki/Qt_%28toolkit%29" title="Wikipedia article about Qt">Qt framework</a>. From 1991 to 1998 that I was a typesetter and Mac systems manager at Decca Records. For several year before that, I worked as a 'temp sec', where I learned a lot about UI and UX from the receiving end. Before that, I had worked for a 18 months at Picador Books, and previously for other publishers in Sydney.</p>
 
-  			<p>I've designed and coded lots of web sites, including previous incarnations of <a href="https://www.itn.co.uk">itn.co.uk</a>, <a href="https://www.yellowdiva.com">yellowdiva.com</a>,  <a href="https://www.deccaclassics.com">deccaclassics.com</a> and <a href="https://www.smithgil.co.uk">smithgil.co.uk</a>.</p>
+        <p>I've designed and coded lots of web sites, including previous incarnations of <a href="https://www.itn.co.uk">itn.co.uk</a>, <a href="https://www.yellowdiva.com">yellowdiva.com</a>,  <a href="https://www.deccaclassics.com">deccaclassics.com</a> and <a href="https://www.smithgil.co.uk">smithgil.co.uk</a>.</p>
 
-  			<p class="borderBottom">I used to be a governor at <a href="https://www.ravenstoneschool.co.uk" title="Ravenstone School homepage">Ravenstone School</a> in Balham, south London, and co-ran two <a href="https://www.codeclub.org.uk" title="Code Club site">Code Clubs</a>.</p>
+        <p class="borderBottom">I used to be a governor at <a href="https://www.ravenstoneschool.co.uk" title="Ravenstone School homepage">Ravenstone School</a> in Balham, south London, and co-ran two <a href="https://www.codeclub.org.uk" title="Code Club site">Code Clubs</a>.</p>
 
-  			<p>I've had a blog since 2001 at <a href="https://samdutton.blogspot.com/" title="Sam Dutton's blog">samdutton.blogspot.com</a>, but there's not much to see. More recently I've blogged at <a href="https://samdutton.wordpress.com/" title="Sam Dutton's blog">samdutton.wordpress.com</a>:</p>
+        <p>I've had a blog since 2001 at <a href="https://samdutton.blogspot.com/" title="Sam Dutton's blog">samdutton.blogspot.com</a>, but there's not much to see. More recently I've blogged at <a href="https://samdutton.wordpress.com/" title="Sam Dutton's blog">samdutton.wordpress.com</a>:</p>
 
-  			<ul>
-  				<li><a href="https://samdutton.wordpress.com/2011/03/09/school-reports-theres-an-app-for-that/" title="School reports: There's An App For That!">School reports: There's An App For That!</a></li>
-  				<li><a href="https://samdutton.wordpress.com/2010/12/16/debugging-google-chrome-extensions/" title="Suggestions for debugging JavaScript in Google Chrome extensions">Debugging Google Chrome extensions</a></li>
-  				<li><a href="https://samdutton.wordpress.com/2008/10/03/debugging-signals-and-slots-in-qt/" title="20 suggestions for debugging signals and slots in Qt">Debugging signals and slots in Qt</a></li>
-  				<li><a href="https://samdutton.wordpress.com/2009/06/06/eliza-lives/" title="Blog post about the IKEA website agent">Eliza Lives!</a></li>
-  				<li><a href="https://samdutton.wordpress.com/2009/03/09/treat-yourself-right/" title="Treat Yourself Right blog article">Treat Yourself Right</a></li>
-  				<li><a href="https://samdutton.wordpress.com/2008/05/23/python-is-not-better-than-c/">Python is (not) better than C</a></li>
-  				<li><a href="https://samdutton.wordpress.com/2009/02/03/snowpersons-of-balham/" title="Pictures of people made of snow in Balham during the Big Freeze of 2009">Snowpersons of Balham</a></li>
-  			</ul>
+        <ul>
+          <li><a href="https://samdutton.wordpress.com/2011/03/09/school-reports-theres-an-app-for-that/" title="School reports: There's An App For That!">School reports: There's An App For That!</a></li>
+          <li><a href="https://samdutton.wordpress.com/2010/12/16/debugging-google-chrome-extensions/" title="Suggestions for debugging JavaScript in Google Chrome extensions">Debugging Google Chrome extensions</a></li>
+          <li><a href="https://samdutton.wordpress.com/2008/10/03/debugging-signals-and-slots-in-qt/" title="20 suggestions for debugging signals and slots in Qt">Debugging signals and slots in Qt</a></li>
+          <li><a href="https://samdutton.wordpress.com/2009/06/06/eliza-lives/" title="Blog post about the IKEA website agent">Eliza Lives!</a></li>
+          <li><a href="https://samdutton.wordpress.com/2009/03/09/treat-yourself-right/" title="Treat Yourself Right blog article">Treat Yourself Right</a></li>
+          <li><a href="https://samdutton.wordpress.com/2008/05/23/python-is-not-better-than-c/">Python is (not) better than C</a></li>
+          <li><a href="https://samdutton.wordpress.com/2009/02/03/snowpersons-of-balham/" title="Pictures of people made of snow in Balham during the Big Freeze of 2009">Snowpersons of Balham</a></li>
+        </ul>
 
-  			<p>I've presented at lots of events including Google I/O and Chrome Dev Summit:</p>
+        <p>I've presented at lots of events including Google I/O and Chrome Dev Summit:</p>
 
-  			<ul>
-  			<li><a href="https://www.youtube.com/watch?v=3pxf3Ju2row" title="Video of Google I/O 2012 Chrome Developer Tools presentation">Chrome Developer Tools Evolution</a></li>
-  			<li><a href="https://www.youtube.com/watch?v=p2HzZkd2A40" title="Video of Google I/O 2013 WebRTC presentation">Real-time communication with WebRTC</a></li>
-  			<li><a href="https://www.youtube.com/watch?v=l-BA9Ee2XuM" title="Video of media API presentation at 2013 Chrome Dev Summit">Media APIs for the multi-platform web</a></li>
-  			</ul>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=3pxf3Ju2row" title="Video of Google I/O 2012 Chrome Developer Tools presentation">Chrome Developer Tools Evolution</a></li>
+          <li><a href="https://www.youtube.com/watch?v=p2HzZkd2A40" title="Video of Google I/O 2013 WebRTC presentation">Real-time communication with WebRTC</a></li>
+          <li><a href="https://www.youtube.com/watch?v=l-BA9Ee2XuM" title="Video of media API presentation at 2013 Chrome Dev Summit">Media APIs for the multi-platform web</a></li>
+        </ul>
 
-  			<p>...written articles for HTML5 Rocks:</p>
+        <p>...written articles for HTML5 Rocks:</p>
 
-  			<ul>
-  				<li><a href="https://www.html5rocks.com/en/tutorials/webrtc/basics/" title="Getting started with WebRTC">Getting started with WebRTC</a></li>
-  				<li><a href="https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/" title="WebRTC infrasctructure article on HTML5 Rocks">WebRTC in the real world: STUN, TURN and signaling</a></li>
-  				<li><a href="https://www.html5rocks.com/en/tutorials/track/basics/" title="Getting started with the Track element">Getting started with the Track element</a></li>
-  				<li><a href="https://www.html5rocks.com/en/tutorials/webperformance/basics/" title="Measuring page load speed with Navigation Timing">Measuring page load speed with Navigation Timing</a></li>
-  			</ul>
+        <ul>
+          <li><a href="https://www.html5rocks.com/en/tutorials/webrtc/basics/" title="Getting started with WebRTC">Getting started with WebRTC</a></li>
+          <li><a href="https://www.html5rocks.com/en/tutorials/webrtc/infrastructure/" title="WebRTC infrasctructure article on HTML5 Rocks">WebRTC in the real world: STUN, TURN and signaling</a></li>
+          <li><a href="https://www.html5rocks.com/en/tutorials/track/basics/" title="Getting started with the Track element">Getting started with the Track element</a></li>
+          <li><a href="https://www.html5rocks.com/en/tutorials/webperformance/basics/" title="Measuring page load speed with Navigation Timing">Measuring page load speed with Navigation Timing</a></li>
+        </ul>
 
-  			<p>...and a couple of posts for the BBC:</p>
+        <p>...and a couple of posts for the BBC:</p>
 
-  			<ul>
-  				<li><a href="https://www.bbc.co.uk/blogs/researchanddevelopment/2010/11/mozilla-audio-data-api.shtml">The Mozilla Audio Data API: what do the numbers mean?</a></li>
-  				<li><a href="https://www.bbc.co.uk/blogs/bbcinternet/2009/08/html_5_and_timed_media.html">HTML5 and timed media</a></li>
-  			</ul>
+        <ul>
+          <li><a href="https://www.bbc.co.uk/blogs/researchanddevelopment/2010/11/mozilla-audio-data-api.shtml">The Mozilla Audio Data API: what do the numbers mean?</a></li>
+          <li><a href="https://www.bbc.co.uk/blogs/bbcinternet/2009/08/html_5_and_timed_media.html">HTML5 and timed media</a></li>
+        </ul>
 
-  			<p>I have several Spotify playlists:</p>
+        <p>I have several Spotify playlists:</p>
 
-  			<ul>
-  				<li><a href="https://bit.ly/quietMusic" title="Quiet music Spotify playlist">bit.ly/quietMusic</a></li>
-  				<li><a href="https://bit.ly/loudMusic" title="Loud music Spotify playlist">bit.ly/loudMusic</a></li>
-  				<li><a href="https://bit.ly/danceMusic" title="Dance music Spotify playlist">bit.ly/danceMusic</a></li>
-  				<li><a href="https://bit.ly/countryMusic" title="Country music Spotify playlist">bit.ly/countryMusic</a></li>
-  				<li><a href="https://bit.ly/hipHop" title="Hip Hop Spotify playlist">bit.ly/hipHop</a></li>
-  				<li><a href="https://bit.ly/rhythmAndBlues" title="Rhythm &amp; Blues Spotify playlist">bit.ly/rhythmAndBlues</a></li>
-  				<li><a href="https://bit.ly/currentFavourites" title="Current favourites on Spotify">bit.ly/currentFavourites</a></li>
-  			</ul>
+        <ul>
+          <li><a href="https://bit.ly/quietMusic" title="Quiet music Spotify playlist">bit.ly/quietMusic</a></li>
+          <li><a href="https://bit.ly/loudMusic" title="Loud music Spotify playlist">bit.ly/loudMusic</a></li>
+          <li><a href="https://bit.ly/danceMusic" title="Dance music Spotify playlist">bit.ly/danceMusic</a></li>
+          <li><a href="https://bit.ly/countryMusic" title="Country music Spotify playlist">bit.ly/countryMusic</a></li>
+          <li><a href="https://bit.ly/hipHop" title="Hip Hop Spotify playlist">bit.ly/hipHop</a></li>
+          <li><a href="https://bit.ly/rhythmAndBlues" title="Rhythm &amp; Blues Spotify playlist">bit.ly/rhythmAndBlues</a></li>
+          <li><a href="https://bit.ly/currentFavourites" title="Current favourites on Spotify">bit.ly/currentFavourites</a></li>
+        </ul>
 
-  			<div class="borderBottom"></div>
+        <div class="borderBottom"></div>
 
-  			<p>Email: <a href="mailto:samdutton_at_gmail.com">samdutton at gmail dot com</a></p>
+        <p>Email: <a href="mailto:samdutton_at_gmail.com">samdutton at gmail dot com</a></p>
 
         <p>Twitter: <a href="https://www.twitter.com/sw12" title="Twitter account for Sam Dutton">@sw12</a></p>
 
-  			<p>Google+: <a href="https://plus.samdutton.com" title="Google+ page for Sam Dutton">plus.samdutton.com</a></p>
+        <p>Google+: <a href="https://plus.samdutton.com" title="Google+ page for Sam Dutton">plus.samdutton.com</a></p>
 
-  			<p>Facebook: <a href="https://www.facebook.com/samdutton" title="Facebook page for Sam Dutton">facebook.com/samdutton</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/samdutton" title="Facebook page for Sam Dutton">facebook.com/samdutton</a></p>
 
-  			<p>LinkedIn: <a href="https://linkedin.com/in/samdutton" title="LinkedIn public profile for Sam Dutton">uk.linkedin.com/in/samdutton</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/samdutton" title="LinkedIn public profile for Sam Dutton">uk.linkedin.com/in/samdutton</a></p>
 
-  			<p>Out of date CV: <a href="cv.doc" title="Sam Dutton's CV">Word format</a> or <a href="cv.odt" title="Sam Dutton's CV">ODF text (ODT) format</a></p>
+        <p>Out of date CV: <a href="cv.doc" title="Sam Dutton's CV">Word format</a> or <a href="cv.odt" title="Sam Dutton's CV">ODF text (ODT) format</a></p>
 
-  		</div> <!-- blurb -->
+        </div> <!-- blurb -->
 
-  		<div id="australianThings">
+        <div id="australianThings">
 
-  			<select id="australianThingSelector" name="australianThingSelector" onchange="load(this)">
-  				<option value="">Show me Australian things...</option>
-  				<option value="anzacs">anzacs</option>
-  				<option value="Aunty_Jack">Aunty Jack</option>
-  				<option value="banksia">banksia</option>
+          <select id="australianThingSelector" name="australianThingSelector" onchange="load(this)">
+              <option value="">Show me Australian things...</option>
+              <option value="anzacs">anzacs</option>
+              <option value="Aunty_Jack">Aunty Jack</option>
+              <option value="banksia">banksia</option>
+              <option value="*berm">berm</option>
+              <option value="billy">billy</option>
+              <option value="bluefin">bluefin</option>
+              <option value="blue_healer">blue healer</option>
+              <option value="Blundstones">Blundstones</option>
+              <option value="boab">boab</option>
+              <option value="*bush">bush</option>
+              <option value="Cable_Beach">Cable Beach</option>
+              <option value="Camry">Camry</option>
+              <option value="carpet_shark">carpet shark</option>
+              <option value="Charger">Charger</option>
+              <option value="Cleo">Cleo</option>
+              <option value="cobbler">cobbler</option>
+              <option value="cray">cray</option>
+              <option value="culvert">culvert</option>
+              <option value="dacks">dacks</option>
+              <option value="damper">damper</option>
+              <option value="eskie">eskie</option>
+              <option value="donga">donga</option>
+              <option value="Fabulon">Fabulon</option>
+              <option value="Falcon">Falcon</option>
+              <option value="fats">fats</option>
+              <option value="*feral">feral</option>
+              <option value="fettler">fettler</option>
+              <option value="Fibro">Fibro</option>
+              <option value="FJ">FJ Holden</option>
+              <option value="Forum">Forum</option>
+              <option value="gidgie">gidgie</option>
+              <option value="grass_tree">grass tree</option>
+              <option value="*grouse">grouse</option>
+              <option value="*having_a_blue">having a blue</option>
+              <option value="HK">HK</option>
+              <option value="HT">HT</option>
+              <option value="hummock">hummock</option>
+              <option value="humpy">humpy</option>
+              <option value="jacaranda">jacaranda</option>
+              <option value="jarrah">jarrah</option>
+              <option value="Johnny_Reb_boots">Johnny Reb boots</option>
+              <option value="Juicy_Fruit">Juicy Fruit</option>
+              <option value="Kalgoorlie">Kalgoorlie</option>
+              <option value="kero_fridge">kero fridge</option>
+              <option value="kombi">kombi</option>
+              <option value="mag_wheels">mag wheels</option>
+              <option value="mallee_root">mallee roots</option>
+              <option value="melaleuca">melaleuca</option>
+              <option value="Metters_stove">Metters stove</option>
+              <option value="*moll">moll</option>
+              <option value="Monaro">Monaro</option>
+              <option value="mulies">mulies</option>
+              <option value="Nullarbor_Plain">Nullarbor Plain</option>
+              <option value="number">number</option>
+              <option value="paddock">paddock</option>
+              <option value="paddy_wagon">paddy wagon</option>
+              <option value="parka">parka</option>
+              <option value="peppermint_gum">peppermint</option>
+              <option value="Pilbara">Pilbara</option>
+              <option value="salmon_gum">salmon gum</option>
+              <option value="saltbush">saltbush</option>
+              <option value="Savage_.22">Savage .22</option>
+              <option value="servo">servo</option>
+              <option value="ses">SES</option>
+              <option value="shag">shag</option>
+              <option value="shaggin_wagon">shaggin wagon (aka sin bin)</option>
+              <option value="*shoot_through">shoot through</option>
+              <option value="Sigma">Sigma</option>
+              <option value="snags">snags</option>
+              <option value="*sticky_beak">sticky beak</option>
+              <option value="stoked">stoked</option>
+              <option value="*straight_arrow">straight arrow</option>
+              <option value="*straight_as_a_die">straight as a die</option>
+              <option value="super_works">super works</option>
+              <option value="thongs">thongs</option>
+              <option value="tracky">tracky</option>
+              <option value="treddlies">treddlies</option>
+              <option value="tuart">tuart</option>
+              <option value="ute">ute</option>
+              <option value="V05">V05</option>
+              <option value="V-8_Sandman">V-8 Sandman</option>
+              <option value="Valiant">Valiant</option>
+              <option value="wattle_bird">wattle bird</option>
+              <option value="wobbegong">wobbegong</option>
+          </select>
 
-  				<option value="*berm">berm</option>
-  				<option value="billy">billy</option>
-  				<option value="bluefin">bluefin</option>
-  				<option value="blue_healer">blue healer</option>
-  				<option value="Blundstones">Blundstones</option>
-  				<option value="boab">boab</option>
+          <img id="australianThingImage" src="images/transparent.gif" alt="Australian thing" />
 
-  				<option value="*bush">bush</option>
-  				<option value="Cable_Beach">Cable Beach</option>
-  				<option value="Camry">Camry</option>
-  				<option value="carpet_shark">carpet shark</option>
-  				<option value="Charger">Charger</option>
-  				<option value="Cleo">Cleo</option>
+          <div id="australianThingText"></div>
 
-  				<option value="cobbler">cobbler</option>
-  				<option value="cray">cray</option>
-  				<option value="culvert">culvert</option>
-  				<option value="dacks">dacks</option>
-  				<option value="damper">damper</option>
-  				<option value="eskie">eskie</option>
+          </div> <!-- australianThings -->
 
-  				<option value="donga">donga</option>
-  				<option value="Fabulon">Fabulon</option>
-  				<option value="Falcon">Falcon</option>
-  				<option value="fats">fats</option>
-  				<option value="*feral">feral</option>
-  				<option value="fettler">fettler</option>
+          </div> <!-- container -->
 
-  				<option value="Fibro">Fibro</option>
-  				<option value="FJ">FJ Holden</option>
-  				<option value="Forum">Forum</option>
-  				<option value="gidgie">gidgie</option>
-  				<option value="grass_tree">grass tree</option>
-  				<option value="*grouse">grouse</option>
+          <script defer>
+          var australianThings = new Array();
+          australianThings['berm'] = "Built up ridge, path or mound of earth.";
+          australianThings['bush'] = "Uncultivated or sparsely settled area. 'The Bush' looms large in the <a href='http://www.cultureandrecreation.gov.au/articles/bush/'>Australian imagination</a>.";
+          australianThings['feral'] = "Rough, hick or inbred (like a <i>feral cat</>).";
+          australianThings['grouse'] = "Adjective: good; verb: complain.";
+          australianThings['having_a_blue'] = "Having an argument.";
+          australianThings['moll'] = "Common Australian term of abuse &ndash; roughly equivalent to British <i>slag</i>.";
+          australianThings['shoot_through'] = "To leave and/or disappear.";
+          australianThings['sticky_beak'] = "Inquisitive or nosy person &ndash; <i>having a sticky beak</i> means taking a look.";
+          australianThings['straight_arrow'] = "Reliable, straightforward person.";
+          australianThings['straight_as_a_die'] = "Old-fashioned, sober."
 
-  				<option value="*having_a_blue">having a blue</option>
-  				<option value="HK">HK</option>
-  				<option value="HT">HT</option>
-  				<option value="hummock">hummock</option>
-  				<option value="humpy">humpy</option>
-  				<option value="jacaranda">jacaranda</option>
+          function load(s)
+          {
+          var australianThingText = document.getElementById("australianThingText");
+          var australianThingImage = document.getElementById("australianThingImage");
+          var option = s.options[s.selectedIndex].value;
+          if(option.indexOf("*") != -1)
+          {
+          australianThingText.innerHTML = australianThings[option.substring(1)];
+          australianThingImage.src = "images/transparent.gif";
+          }
+          else if (option)
+          {
+          australianThingText.innerHTML = "";
+          australianThingImage.src = "images/" + option + ".jpg";
+          status = australianThingImage.src;
+          }
+          return false;
+          }
+          </script>
 
-  				<option value="jarrah">jarrah</option>
-  				<option value="Johnny_Reb_boots">Johnny Reb boots</option>
-  				<option value="Juicy_Fruit">Juicy Fruit</option>
-  				<option value="Kalgoorlie">Kalgoorlie</option>
-  				<option value="kero_fridge">kero fridge</option>
-  				<option value="kombi">kombi</option>
 
-  				<option value="mag_wheels">mag wheels</option>
-  				<option value="mallee_root">mallee roots</option>
-  				<option value="melaleuca">melaleuca</option>
-  				<option value="Metters_stove">Metters stove</option>
-  				<option value="*moll">moll</option>
-  				<option value="Monaro">Monaro</option>
+        </body>
 
-  				<option value="mulies">mulies</option>
-  				<option value="Nullarbor_Plain">Nullarbor Plain</option>
-  				<option value="number">number</option>
-  				<option value="paddock">paddock</option>
-  				<option value="paddy_wagon">paddy wagon</option>
-  				<option value="parka">parka</option>
-
-  				<option value="peppermint_gum">peppermint</option>
-  				<option value="Pilbara">Pilbara</option>
-  				<option value="salmon_gum">salmon gum</option>
-  				<option value="saltbush">saltbush</option>
-  				<option value="Savage_.22">Savage .22</option>
-  				<option value="servo">servo</option>
-
-  				<option value="ses">SES</option>
-  				<option value="shag">shag</option>
-  				<option value="shaggin_wagon">shaggin wagon (aka sin bin)</option>
-  				<option value="*shoot_through">shoot through</option>
-  				<option value="Sigma">Sigma</option>
-  				<option value="snags">snags</option>
-
-  				<option value="*sticky_beak">sticky beak</option>
-  				<option value="stoked">stoked</option>
-  				<option value="*straight_arrow">straight arrow</option>
-  				<option value="*straight_as_a_die">straight as a die</option>
-  				<option value="super_works">super works</option>
-  				<option value="thongs">thongs</option>
-
-  				<option value="tracky">tracky</option>
-  				<option value="treddlies">treddlies</option>
-  				<option value="tuart">tuart</option>
-  				<option value="ute">ute</option>
-  				<option value="V05">V05</option>
-  				<option value="V-8_Sandman">V-8 Sandman</option>
-
-  				<option value="Valiant">Valiant</option>
-  				<option value="wattle_bird">wattle bird</option>
-  				<option value="wobbegong">wobbegong</option>
-  			</select>
-
-  			<img id="australianThingImage" src="images/transparent.gif" alt="Australian thing" />
-
-  			<div id="australianThingText"></div>
-
-  		</div> <!-- australianThings -->
-
-  	</div> <!-- container -->
-
-  	<script src="js/index.js"></script>
-
-  	<script src="https://www.google-analytics.com/urchin.js"></script>
-
-  	<script>
-  		_uacct = "UA-2630780-1";
-  		urchinTracker();
-  	</script>
-
-  </body>
-
-  </html>
+      </html>
