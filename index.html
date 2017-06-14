@@ -19,7 +19,7 @@
 
     <script>
     window.ga = window.ga || function() {
-      (ga.q=ga.q||[]).push(arguments);
+    (ga.q=ga.q||[]).push(arguments);
     };
     ga.l=+new Date;
     ga('create', 'UA-2630780-1', 'auto');
@@ -69,15 +69,16 @@
     }
 
     div#highlight {
-    border: 1px solid #666;
-    font-size: 1.2em;
-    margin: 0 0 50px 0;
-    padding: 1em 1em 0 1em;
+    border: 1px solid #999;
+    font-size: 0.8em;
+    margin: 0 0 40px 0;
+    padding: 0.5em 0.5em 0 0.5em;
     }
 
     a#twitter div {
     display: inline-block;
     font-weight: 500;
+    left: -5px;
     position: relative;
     top: -13px;
     }
@@ -87,18 +88,19 @@
     }
 
     h1 {
+    font-size: 22px;
     line-height: 1.3em;
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
     padding: 0;
     }
 
     img#samDutton {
     float: right;
-    margin: 0 0 15px 10px;
-    max-width: 400px;
+    height: 100px;
+    margin: 0 0 15px 25px;
     position: relative;
     top: 7px;
-    width: 45vw;
+    width: 100px;
     }
 
     li {
@@ -106,15 +108,10 @@
     }
 
     p {
-    line-height: 1.79em;
+    color: #444;
+    font-weight: 300;
+    line-height: 1.6em;
     margin: 0 0 1em 0;
-    }
-
-    p.border {
-    border: 1px solid #ccc;
-    margin: 1em 0 1em 0;
-    padding: 1em;
-    width: 310px;
     }
 
     select#australianThingSelector {
@@ -124,6 +121,8 @@
 
     a#twitter svg {
     height: 40px;
+    left: -5px;
+    position: relative;
     width: 40px;
     }
 
@@ -132,7 +131,15 @@
     margin: 15px 15px 15px -23px;
     }
 
-
+    @media (min-width: 650px) {
+    h1 {
+    font-size: 24px;
+    }
+    img#samDutton {
+    height: 300px;
+    width: 300px;
+    }
+    }
     </style>
 
 
@@ -142,15 +149,9 @@
 
     <div id="container">
 
-      <div id="highlight">
-        <p>Check out my <strong><a href="https://www.medianews.me" title="Newsletter archive">Media Newsletter</a></strong>: a monthly roundup of news about audio, video and realtime communications.</p>
-        <p>Sign up at <a href="https://bit.ly/signupmedia" title="Newsletter signup form">bit.ly/signupmedia</a>.</p>
-        <p>Archive at <a href="https://medianews.me" title="Newsletter archive">medianews.me</a>.</p>
-      </div>
-
       <div id="blurb">
 
-        <img id="samDutton" src="images/samDuttonDevFest.jpg" alt="Sam Dutton at the 2011 Barcelona Dev Fest" title="Sam Dutton at the 2011 Barcelona Dev Fest" />
+        <img id="samDutton" src="images/me.jpg" alt="Sam Dutton" />
 
         <h1>Sam Dutton</h1>
 
@@ -237,91 +238,91 @@
         <div id="australianThings">
 
           <select id="australianThingSelector" name="australianThingSelector" onchange="load(this)">
-              <option value="">Show me Australian things...</option>
-              <option value="anzacs">anzacs</option>
-              <option value="Aunty_Jack">Aunty Jack</option>
-              <option value="banksia">banksia</option>
-              <option value="*berm">berm</option>
-              <option value="billy">billy</option>
-              <option value="bluefin">bluefin</option>
-              <option value="blue_healer">blue healer</option>
-              <option value="Blundstones">Blundstones</option>
-              <option value="boab">boab</option>
-              <option value="*bush">bush</option>
-              <option value="Cable_Beach">Cable Beach</option>
-              <option value="Camry">Camry</option>
-              <option value="carpet_shark">carpet shark</option>
-              <option value="Charger">Charger</option>
-              <option value="Cleo">Cleo</option>
-              <option value="cobbler">cobbler</option>
-              <option value="cray">cray</option>
-              <option value="culvert">culvert</option>
-              <option value="dacks">dacks</option>
-              <option value="damper">damper</option>
-              <option value="eskie">eskie</option>
-              <option value="donga">donga</option>
-              <option value="Fabulon">Fabulon</option>
-              <option value="Falcon">Falcon</option>
-              <option value="fats">fats</option>
-              <option value="*feral">feral</option>
-              <option value="fettler">fettler</option>
-              <option value="Fibro">Fibro</option>
-              <option value="FJ">FJ Holden</option>
-              <option value="Forum">Forum</option>
-              <option value="gidgie">gidgie</option>
-              <option value="grass_tree">grass tree</option>
-              <option value="*grouse">grouse</option>
-              <option value="*having_a_blue">having a blue</option>
-              <option value="HK">HK</option>
-              <option value="HT">HT</option>
-              <option value="hummock">hummock</option>
-              <option value="humpy">humpy</option>
-              <option value="jacaranda">jacaranda</option>
-              <option value="jarrah">jarrah</option>
-              <option value="Johnny_Reb_boots">Johnny Reb boots</option>
-              <option value="Juicy_Fruit">Juicy Fruit</option>
-              <option value="Kalgoorlie">Kalgoorlie</option>
-              <option value="kero_fridge">kero fridge</option>
-              <option value="kombi">kombi</option>
-              <option value="mag_wheels">mag wheels</option>
-              <option value="mallee_root">mallee roots</option>
-              <option value="melaleuca">melaleuca</option>
-              <option value="Metters_stove">Metters stove</option>
-              <option value="*moll">moll</option>
-              <option value="Monaro">Monaro</option>
-              <option value="mulies">mulies</option>
-              <option value="Nullarbor_Plain">Nullarbor Plain</option>
-              <option value="number">number</option>
-              <option value="paddock">paddock</option>
-              <option value="paddy_wagon">paddy wagon</option>
-              <option value="parka">parka</option>
-              <option value="peppermint_gum">peppermint</option>
-              <option value="Pilbara">Pilbara</option>
-              <option value="salmon_gum">salmon gum</option>
-              <option value="saltbush">saltbush</option>
-              <option value="Savage_.22">Savage .22</option>
-              <option value="servo">servo</option>
-              <option value="ses">SES</option>
-              <option value="shag">shag</option>
-              <option value="shaggin_wagon">shaggin wagon (aka sin bin)</option>
-              <option value="*shoot_through">shoot through</option>
-              <option value="Sigma">Sigma</option>
-              <option value="snags">snags</option>
-              <option value="*sticky_beak">sticky beak</option>
-              <option value="stoked">stoked</option>
-              <option value="*straight_arrow">straight arrow</option>
-              <option value="*straight_as_a_die">straight as a die</option>
-              <option value="super_works">super works</option>
-              <option value="thongs">thongs</option>
-              <option value="tracky">tracky</option>
-              <option value="treddlies">treddlies</option>
-              <option value="tuart">tuart</option>
-              <option value="ute">ute</option>
-              <option value="V05">V05</option>
-              <option value="V-8_Sandman">V-8 Sandman</option>
-              <option value="Valiant">Valiant</option>
-              <option value="wattle_bird">wattle bird</option>
-              <option value="wobbegong">wobbegong</option>
+            <option value="">Show me Australian things...</option>
+            <option value="anzacs">anzacs</option>
+            <option value="Aunty_Jack">Aunty Jack</option>
+            <option value="banksia">banksia</option>
+            <option value="*berm">berm</option>
+            <option value="billy">billy</option>
+            <option value="bluefin">bluefin</option>
+            <option value="blue_healer">blue healer</option>
+            <option value="Blundstones">Blundstones</option>
+            <option value="boab">boab</option>
+            <option value="*bush">bush</option>
+            <option value="Cable_Beach">Cable Beach</option>
+            <option value="Camry">Camry</option>
+            <option value="carpet_shark">carpet shark</option>
+            <option value="Charger">Charger</option>
+            <option value="Cleo">Cleo</option>
+            <option value="cobbler">cobbler</option>
+            <option value="cray">cray</option>
+            <option value="culvert">culvert</option>
+            <option value="dacks">dacks</option>
+            <option value="damper">damper</option>
+            <option value="eskie">eskie</option>
+            <option value="donga">donga</option>
+            <option value="Fabulon">Fabulon</option>
+            <option value="Falcon">Falcon</option>
+            <option value="fats">fats</option>
+            <option value="*feral">feral</option>
+            <option value="fettler">fettler</option>
+            <option value="Fibro">Fibro</option>
+            <option value="FJ">FJ Holden</option>
+            <option value="Forum">Forum</option>
+            <option value="gidgie">gidgie</option>
+            <option value="grass_tree">grass tree</option>
+            <option value="*grouse">grouse</option>
+            <option value="*having_a_blue">having a blue</option>
+            <option value="HK">HK</option>
+            <option value="HT">HT</option>
+            <option value="hummock">hummock</option>
+            <option value="humpy">humpy</option>
+            <option value="jacaranda">jacaranda</option>
+            <option value="jarrah">jarrah</option>
+            <option value="Johnny_Reb_boots">Johnny Reb boots</option>
+            <option value="Juicy_Fruit">Juicy Fruit</option>
+            <option value="Kalgoorlie">Kalgoorlie</option>
+            <option value="kero_fridge">kero fridge</option>
+            <option value="kombi">kombi</option>
+            <option value="mag_wheels">mag wheels</option>
+            <option value="mallee_root">mallee roots</option>
+            <option value="melaleuca">melaleuca</option>
+            <option value="Metters_stove">Metters stove</option>
+            <option value="*moll">moll</option>
+            <option value="Monaro">Monaro</option>
+            <option value="mulies">mulies</option>
+            <option value="Nullarbor_Plain">Nullarbor Plain</option>
+            <option value="number">number</option>
+            <option value="paddock">paddock</option>
+            <option value="paddy_wagon">paddy wagon</option>
+            <option value="parka">parka</option>
+            <option value="peppermint_gum">peppermint</option>
+            <option value="Pilbara">Pilbara</option>
+            <option value="salmon_gum">salmon gum</option>
+            <option value="saltbush">saltbush</option>
+            <option value="Savage_.22">Savage .22</option>
+            <option value="servo">servo</option>
+            <option value="ses">SES</option>
+            <option value="shag">shag</option>
+            <option value="shaggin_wagon">shaggin wagon (aka sin bin)</option>
+            <option value="*shoot_through">shoot through</option>
+            <option value="Sigma">Sigma</option>
+            <option value="snags">snags</option>
+            <option value="*sticky_beak">sticky beak</option>
+            <option value="stoked">stoked</option>
+            <option value="*straight_arrow">straight arrow</option>
+            <option value="*straight_as_a_die">straight as a die</option>
+            <option value="super_works">super works</option>
+            <option value="thongs">thongs</option>
+            <option value="tracky">tracky</option>
+            <option value="treddlies">treddlies</option>
+            <option value="tuart">tuart</option>
+            <option value="ute">ute</option>
+            <option value="V05">V05</option>
+            <option value="V-8_Sandman">V-8 Sandman</option>
+            <option value="Valiant">Valiant</option>
+            <option value="wattle_bird">wattle bird</option>
+            <option value="wobbegong">wobbegong</option>
           </select>
 
           <img id="australianThingImage" src="images/transparent.gif" alt="Australian thing" />
