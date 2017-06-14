@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 
     <meta name="description" content="Sam Dutton is a web developer working for Google in London." />
@@ -68,13 +68,6 @@
     max-width: 800px;
     }
 
-    div#highlight {
-    border: 1px solid #999;
-    font-size: 0.8em;
-    margin: 0 0 40px 0;
-    padding: 0.5em 0.5em 0 0.5em;
-    }
-
     a#twitter div {
     display: inline-block;
     font-weight: 500;
@@ -103,6 +96,12 @@
     width: 100px;
     }
 
+    label {
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    }
+
     li {
     margin: 0 0 0.5em 0;
     }
@@ -116,7 +115,7 @@
 
     select#australianThingSelector {
     display: block;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     }
 
     a#twitter svg {
@@ -236,9 +235,9 @@
         </div> <!-- blurb -->
 
         <div id="australianThings">
-
+          <label for="australianThingSelector">Show me Australian things: </label>
           <select id="australianThingSelector" name="australianThingSelector" onchange="load(this)">
-            <option value="">Show me Australian things...</option>
+            <option value=""></option>
             <option value="anzacs">anzacs</option>
             <option value="Aunty_Jack">Aunty Jack</option>
             <option value="banksia">banksia</option>
@@ -325,7 +324,7 @@
             <option value="wobbegong">wobbegong</option>
           </select>
 
-          <img id="australianThingImage" src="images/transparent.gif" alt="Australian thing" />
+          <img id="australianThingImage" src="images/nada.png" alt="Australian thing" />
 
           <div id="australianThingText"></div>
 
@@ -333,39 +332,42 @@
 
           </div> <!-- container -->
 
-          <script defer>
-          var australianThings = new Array();
-          australianThings['berm'] = "Built up ridge, path or mound of earth.";
-          australianThings['bush'] = "Uncultivated or sparsely settled area. 'The Bush' looms large in the <a href='http://www.cultureandrecreation.gov.au/articles/bush/'>Australian imagination</a>.";
-          australianThings['feral'] = "Rough, hick or inbred (like a <i>feral cat</>).";
-          australianThings['grouse'] = "Adjective: good; verb: complain.";
-          australianThings['having_a_blue'] = "Having an argument.";
-          australianThings['moll'] = "Common Australian term of abuse &ndash; roughly equivalent to British <i>slag</i>.";
-          australianThings['shoot_through'] = "To leave and/or disappear.";
-          australianThings['sticky_beak'] = "Inquisitive or nosy person &ndash; <i>having a sticky beak</i> means taking a look.";
-          australianThings['straight_arrow'] = "Reliable, straightforward person.";
-          australianThings['straight_as_a_die'] = "Old-fashioned, sober."
+          <script>
+          if (navigator.serviceWorker) {
+            navigator.serviceWorker.register("/sw.js")["catch"](function(err) {
+              console.error("Unable to register service worker.", err);
+            });
+          }
 
-          function load(s)
-          {
-          var australianThingText = document.getElementById("australianThingText");
-          var australianThingImage = document.getElementById("australianThingImage");
-          var option = s.options[s.selectedIndex].value;
-          if(option.indexOf("*") != -1)
-          {
-          australianThingText.innerHTML = australianThings[option.substring(1)];
-          australianThingImage.src = "images/transparent.gif";
-          }
-          else if (option)
-          {
-          australianThingText.innerHTML = "";
-          australianThingImage.src = "images/" + option + ".jpg";
-          status = australianThingImage.src;
-          }
-          return false;
+          var australianThingText = document.getElementById('australianThingText');
+          var australianThingImage = document.getElementById('australianThingImage');
+
+          var australianThings = new Array();
+          australianThings['berm'] = 'Built up ridge, path or mound of earth.';
+          australianThings['bush'] = 'Uncultivated or sparsely settled area. "The Bush" looms large in the <a href="http://www.cultureandrecreation.gov.au/articles/bush/">Australian imagination</a>.';
+          australianThings['feral'] = 'Rough, hick or inbred (like a <i>feral cat</>).';
+          australianThings['grouse'] = 'Adjective: good; verb: complain.';
+          australianThings['having_a_blue'] = 'Having an argument.';
+          australianThings['moll'] = 'Common Australian term of abuse &mdash; roughly equivalent to British <i>slag</i>.';
+          australianThings['shoot_through'] = 'To leave and/or disappear.';
+          australianThings['sticky_beak'] = 'Inquisitive or nosy person &mdash; <i>having a sticky beak</i> means taking a look.';
+          australianThings['straight_arrow'] = 'Reliable, straightforward person.';
+          australianThings['straight_as_a_die'] = 'Old-fashioned, sober.'
+
+          function load(s) {
+            var option = s.options[s.selectedIndex].value;
+            if(option.indexOf('*') !== -1) {
+              australianThingText.innerHTML = australianThings[option.substring(1)];
+              australianThingImage.src = 'images/nada.png';
+            } else if (option) {
+              australianThingText.innerHTML = '';
+              var imageFile = option + '.jpg';
+              australianThingImage.src = 'images/' + imageFile;
+              status = australianThingImage.src;
+            }
+            return false;
           }
           </script>
-
 
         </body>
 

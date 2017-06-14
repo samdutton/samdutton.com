@@ -1,6 +1,6 @@
 {
   "name": "Sam Dutton is a web developer working for Google in London.",
-  "short_name": "samdutton.com",
+  "short_name": "Sam Dutton",
   "start_url": "./?utm_source=homescreen",
   "display": "standalone",
   "theme_color": "#ffffff",
