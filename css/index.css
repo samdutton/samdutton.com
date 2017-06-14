@@ -1,0 +1,85 @@
+a {
+  color: #4183C4;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 40px;
+}
+
+div.borderBottom {
+  border-bottom: 1px solid #666;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+div#blurb {
+  border-bottom: 1px solid #666;
+  margin-bottom: 25px;
+  padding-bottom:0px;
+}
+
+div#container {
+  margin: 0 auto 0 auto;
+  max-width: 800px;
+}
+
+div#highlight {
+  border: 1px solid #666;
+  font-size: 1.2em;
+  margin: 0 0 50px 0;
+  padding: 1em 1em 0 1em;
+}
+
+h1 {
+  line-height: 1.3em;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+iframe.twitter-follow-button {
+  margin: 0 0 1em 0;
+}
+
+img#samDutton {
+  float: right;
+  /* height: 267px; */
+  margin: 0 0 15px 10px;
+  position: relative;
+  top: 7px;
+  width: 45vw;
+  max-width: 400px;
+}
+
+li {
+  margin: 0 0 0.5em 0;
+}
+
+p {
+  line-height: 1.79em;
+  margin: 0 0 1em 0;
+}
+
+p.border {
+  border: 1px solid #ccc;
+  margin: 1em 0 1em 0;
+  padding: 1em;
+  width: 310px;
+}
+
+select#australianThingSelector {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+ul {
+  list-style: square;
+  margin: 15px 15px 15px -23px;
+}
+
