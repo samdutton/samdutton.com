@@ -14,22 +14,29 @@ const FILES = [
   'index.html',
   'images/me.jpg',
   'images/nada.png',
-  'https://www.google-analytics.com/analytics.js'
 ];
+
 self.addEventListener('install', (event) => {
+  console.log('install event', event);
   event.waitUntil(installHandler(event));
 });
+
 self.addEventListener('activate', (event) => {
+  console.log('activate event', event);
   clients.claim();
 });
+
 self.addEventListener('fetch', (event) => {
+  console.log('fetch event', event);
   event.respondWith(fetchHandler(event.request));
 });
+
 async function installHandler(event) {
   const cache = await caches.open('snapshot');
   cache.addAll(FILES);
   self.skipWaiting();
 }
+
 async function fetchHandler(request) {
   const cache = await caches.open('snapshot');
   const cacheResult = await cache.match(request);
