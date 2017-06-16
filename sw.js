@@ -18,17 +18,17 @@ const FILES = [
 ];
 
 self.addEventListener('install', (event) => {
-  console.log('install event', event);
+  console.log('Service worker:', event);
   event.waitUntil(installHandler(event));
 });
 
 self.addEventListener('activate', (event) => {
-  console.log('activate event', event);
+  console.log('Service worker:', event);
   clients.claim();
 });
 
 self.addEventListener('fetch', (event) => {
-  console.log('fetch event', event);
+  console.log('Service worker:', event);
   event.respondWith(fetchHandler(event.request));
 });
 

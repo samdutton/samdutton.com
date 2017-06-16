@@ -135,8 +135,8 @@
         font-size: 24px;
       }
       img#samDutton {
-        height: 300px;
-        width: 300px;
+        height: 315px;
+        width: 315px;
       }
     }
     </style>
@@ -342,7 +342,7 @@
           var australianThingText = document.getElementById('australianThingText');
           var australianThingImage = document.getElementById('australianThingImage');
 
-          var australianThings = new Array();
+          var australianThings = {};
           australianThings['berm'] = 'Built up ridge, path or mound of earth.';
           australianThings['bush'] = 'Uncultivated or sparsely settled area. "The Bush" looms large in the <a href="http://www.australia.gov.au/about-australia/australian-story/austn-bush">Australian imagination</a>.';
           australianThings['feral'] = 'Rough, hick or inbred (like a <i>feral cat</>).';
@@ -356,7 +356,7 @@
 
           function load(s) {
             var option = s.options[s.selectedIndex].value;
-            if(option.indexOf('*') !== -1) {
+            if (option.indexOf('*') !== -1) {
               australianThingText.innerHTML = australianThings[option.substring(1)];
               australianThingImage.src = 'images/nada.png';
             } else if (option) {
