@@ -33,13 +33,13 @@ self.addEventListener('fetch', (event) => {
 });
 
 async function installHandler(event) {
-  const cache = await caches.open('snapshot');
+  const cache = await caches.open('v1');
   cache.addAll(FILES);
   self.skipWaiting();
 }
 
 async function fetchHandler(request) {
-  const cache = await caches.open('snapshot');
+  const cache = await caches.open('v1');
   const cacheResult = await cache.match(request);
   if (cacheResult) {
     return cacheResult;
