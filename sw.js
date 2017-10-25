@@ -39,7 +39,7 @@ async function installHandler(event) {
 }
 
 async function fetchHandler(request) {
-  const cache = await caches.open('v1');
+  const cache = await caches.open('v2');
   const cacheResult = await cache.match(request);
   if (cacheResult) {
     return cacheResult;
