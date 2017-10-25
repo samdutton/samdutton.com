@@ -17,6 +17,8 @@ const FILES = [
   'images/nada.png',
 ];
 
+const CACHE = 'v2';
+
 self.addEventListener('install', (event) => {
   console.log('Service worker:', event);
   event.waitUntil(installHandler(event));
@@ -33,13 +35,13 @@ self.addEventListener('fetch', (event) => {
 });
 
 async function installHandler(event) {
-  const cache = await caches.open('v1');
+  const cache = await caches.open(CACHE);
   cache.addAll(FILES);
   self.skipWaiting();
 }
 
 async function fetchHandler(request) {
-  const cache = await caches.open('v2');
+  const cache = await caches.open(CACHE);
   const cacheResult = await cache.match(request);
   if (cacheResult) {
     return cacheResult;
