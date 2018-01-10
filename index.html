@@ -237,7 +237,7 @@
 
         <div id="australianThings">
           <label for="australianThingSelector">Show me Australian things: </label>
-          <select id="australianThingSelector" name="australianThingSelector" onchange="load(this)">
+          <select id="australianThingSelector" name="australianThingSelector">
             <option value=""></option>
             <option value="anzacs">anzacs</option>
             <option value="Aunty_Jack">Aunty Jack</option>
@@ -272,7 +272,7 @@
             <option value="gidgie">gidgie</option>
             <option value="grass_tree">grass tree</option>
             <option value="*grouse">grouse</option>
-            <option value="*having_a_blue">having a blue</option>
+            <option value="*havingABlue">having a blue</option>
             <option value="HK">HK</option>
             <option value="HT">HT</option>
             <option value="hummock">hummock</option>
@@ -305,13 +305,13 @@
             <option value="ses">SES</option>
             <option value="shag">shag</option>
             <option value="shaggin_wagon">shaggin wagon (aka sin bin)</option>
-            <option value="*shoot_through">shoot through</option>
+            <option value="*shootThrough">shoot through</option>
             <option value="Sigma">Sigma</option>
             <option value="snags">snags</option>
-            <option value="*sticky_beak">sticky beak</option>
+            <option value="*stickyBeak">sticky beak</option>
             <option value="stoked">stoked</option>
-            <option value="*straight_arrow">straight arrow</option>
-            <option value="*straight_as_a_die">straight as a die</option>
+            <option value="*straightArrow">straight arrow</option>
+            <option value="*straightAsADie">straight as a die</option>
             <option value="super_works">super works</option>
             <option value="thongs">thongs</option>
             <option value="tracky">tracky</option>
@@ -335,30 +335,39 @@
 
           <script>
           if (navigator.serviceWorker) {
-            navigator.serviceWorker.register("sw.js")["catch"](function(err) {
-              console.error("Unable to register service worker.", err);
+            navigator.serviceWorker.register('sw.js').catch(function(err) {
+              console.error('Unable to register service worker.', err);
             });
           }
 
-          var australianThingText = document.getElementById('australianThingText');
-          var australianThingImage = document.getElementById('australianThingImage');
+          var australianThingText =
+              document.getElementById('australianThingText');
+          var australianThingImage =
+              document.getElementById('australianThingImage');
+          var australianThingSelector =
+              document.getElementById('australianThingSelector');
+
 
           var australianThings = {};
-          australianThings['berm'] = 'Built up ridge, path or mound of earth.';
-          australianThings['bush'] = 'Uncultivated or sparsely settled area. "The Bush" looms large in the <a href="http://www.australia.gov.au/about-australia/australian-story/austn-bush">Australian imagination</a>.';
-          australianThings['feral'] = 'Rough, hick or inbred (like a <i>feral cat</>).';
-          australianThings['grouse'] = 'Adjective: good; verb: complain.';
-          australianThings['having_a_blue'] = 'Having an argument.';
-          australianThings['moll'] = 'Common Australian term of abuse &mdash; roughly equivalent to British <i>slag</i>.';
-          australianThings['shoot_through'] = 'To leave and/or disappear.';
-          australianThings['sticky_beak'] = 'Inquisitive or nosy person &mdash; <i>having a sticky beak</i> means taking a look.';
-          australianThings['straight_arrow'] = 'Reliable, straightforward person.';
-          australianThings['straight_as_a_die'] = 'Old-fashioned, sober.'
+          australianThings.berm = 'Built up ridge, path or mound of earth.';
+          australianThings.bush = 'Uncultivated or sparsely settled area. "The Bush" looms large in the <a href="https://australia.gov.au/about-australia/australian-story/austn-bush">Australian imagination</a>.';
+          australianThings.feral =
+            'Rough, hick or inbred (like a <em>feral cat</em>).';
+          australianThings.grouse = 'Adjective: good; verb: complain.';
+          australianThings.havingABlue = 'Having an argument.';
+          australianThings.moll = 'Common Australian term of abuse &mdash;' +
+            'roughly equivalent to British <i>slag</i>.';
+          australianThings.shootThrough = 'To leave and/or disappear.';
+          australianThings.stickyBeak = 'Inquisitive or nosy person &mdash; ' +
+            '<i>having a sticky beak</i> means <i>taking a look</i>.';
+          australianThings.straightArrow = 'Reliable, straightforward person.';
+          australianThings.straightAsADie = 'Old-fashioned, sober.';
 
-          function load(s) {
-            var option = s.options[s.selectedIndex].value;
+          australianThingSelector.onchange = function() {
+            var option = this.options[this.selectedIndex].value;
             if (option.indexOf('*') !== -1) {
-              australianThingText.innerHTML = australianThings[option.substring(1)];
+              australianThingText.innerHTML =
+                  australianThings[option.substring(1)];
               australianThingImage.src = 'images/nada.png';
             } else if (option) {
               australianThingText.innerHTML = '';
@@ -366,7 +375,7 @@
               australianThingImage.src = 'images/' + imageFile;
             }
             return false;
-          }
+          };
           </script>
 
         </body>
