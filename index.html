@@ -18,14 +18,14 @@
     <link rel="canonical" href="https://samdutton.com">
     <link rel="manifest" href="manifest.json">
 
-    <script>
-    window.ga = window.ga || function() {
-      (ga.q=ga.q||[]).push(arguments);
-    };
-    ga.l=+new Date;
-    ga('create', 'UA-2630780-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+<script>
+window.ga = window.ga || function() {
+  (ga.q=ga.q||[]).push(arguments);
+};
+ga.l=+new Date;
+ga('create', 'UA-2630780-1', 'auto');
+ga('send', 'pageview');
+</script>
 
     <script async src="https://www.google-analytics.com/analytics.js"></script>
 
@@ -67,6 +67,13 @@
     div#container {
     margin: 0 auto 0 auto;
     max-width: 800px;
+    }
+
+    div#highlight {
+    background-color: #eee;
+    font-size: 1.2em;
+    margin: 0 0 50px 0;
+    padding: 1.5em 2em 0.5em 2em;
     }
 
     a#twitter div {
@@ -132,13 +139,13 @@
     }
 
     @media (min-width: 650px) {
-      h1 {
-        font-size: 24px;
-      }
-      img#samDutton {
-        height: 315px;
-        width: 315px;
-      }
+    h1 {
+    font-size: 24px;
+    }
+    img#samDutton {
+    height: 315px;
+    width: 315px;
+    }
     }
     </style>
 
@@ -148,6 +155,10 @@
   <body>
 
     <div id="container">
+
+      <div id="highlight">
+        <p>New article: <a href="https://medium.com/dev-channel/how-to-add-full-text-search-to-your-website-4e9c80ce2bf4">How to add search to your website</a></p>
+      </div>
 
       <div id="blurb">
 
@@ -335,46 +346,46 @@
 
           <script>
           if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('sw.js').catch(function(err) {
-              console.error('Unable to register service worker.', err);
-            });
+          navigator.serviceWorker.register('sw.js').catch(function(err) {
+          console.error('Unable to register service worker.', err);
+          });
           }
 
           var australianThingText =
-              document.getElementById('australianThingText');
+          document.getElementById('australianThingText');
           var australianThingImage =
-              document.getElementById('australianThingImage');
+          document.getElementById('australianThingImage');
           var australianThingSelector =
-              document.getElementById('australianThingSelector');
+          document.getElementById('australianThingSelector');
 
 
           var australianThings = {};
           australianThings.berm = 'Built up ridge, path or mound of earth.';
           australianThings.bush = 'Uncultivated or sparsely settled area. "The Bush" looms large in the <a href="https://australia.gov.au/about-australia/australian-story/austn-bush">Australian imagination</a>.';
           australianThings.feral =
-            'Rough, hick or inbred (like a <em>feral cat</em>).';
+          'Rough, hick or inbred (like a <em>feral cat</em>).';
           australianThings.grouse = 'Adjective: good; verb: complain.';
           australianThings.havingABlue = 'Having an argument.';
           australianThings.moll = 'Common Australian term of abuse &mdash;' +
-            'roughly equivalent to British <i>slag</i>.';
+          'roughly equivalent to British <i>slag</i>.';
           australianThings.shootThrough = 'To leave and/or disappear.';
           australianThings.stickyBeak = 'Inquisitive or nosy person &mdash; ' +
-            '<i>having a sticky beak</i> means <i>taking a look</i>.';
+          '<i>having a sticky beak</i> means <i>taking a look</i>.';
           australianThings.straightArrow = 'Reliable, straightforward person.';
           australianThings.straightAsADie = 'Old-fashioned, sober.';
 
           australianThingSelector.onchange = function() {
-            var option = this.options[this.selectedIndex].value;
-            if (option.indexOf('*') !== -1) {
-              australianThingText.innerHTML =
-                  australianThings[option.substring(1)];
-              australianThingImage.src = 'images/nada.png';
-            } else if (option) {
-              australianThingText.innerHTML = '';
-              var imageFile = option + '.jpg';
-              australianThingImage.src = 'images/' + imageFile;
-            }
-            return false;
+          var option = this.options[this.selectedIndex].value;
+          if (option.indexOf('*') !== -1) {
+          australianThingText.innerHTML =
+          australianThings[option.substring(1)];
+          australianThingImage.src = 'images/nada.png';
+          } else if (option) {
+          australianThingText.innerHTML = '';
+          var imageFile = option + '.jpg';
+          australianThingImage.src = 'images/' + imageFile;
+          }
+          return false;
           };
           </script>
 
