@@ -1,0 +1,62 @@
+a#basket {
+  margin: auto;
+}
+
+header {
+  background-color: #1976D2;
+  display: grid;
+  grid-template-columns: 80px auto 80px;
+  padding: 20px 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 120px auto 120px;
+  grid-gap: 10px 20px;
+}
+
+section div {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+input#search {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+}
+
+input::placeholder {
+  color: #ddd;
+  font-size: 16px;
+}
+
+input:focus::placeholder {
+  transition: opacity 0.1s 0.1s ease;
+  opacity: 0;
+}
+
+menu {
+  margin: auto;
+  padding: 0;
+}
+
+#basket svg {
+  fill: white;
+  width: 28px;
+}
+
+menu svg {
+  fill: white;
+  width: 28px;
+}
