@@ -39,10 +39,8 @@ button[disabled] {
 }
 */
 
-section div {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
+main div {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   padding: 20px;
   text-align: center;
 }
@@ -50,6 +48,7 @@ section div {
 footer {
   background-color: #444;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -65,8 +64,12 @@ header {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  padding: 0 40px;
+  font-weight: 300;
+  padding: 0 30px;
+}
+
+main img {
+  width: 100%;
 }
 
 input#search {
@@ -74,6 +77,7 @@ input#search {
   border: none;
   border-bottom: 1px solid #ddd;
   color: white;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding: 5px;
 }
@@ -89,6 +93,14 @@ input::placeholder {
 input:focus::placeholder {
   transition: opacity 0.1s 0.1s ease;
   opacity: 0;
+}
+
+main {
+  display: grid;
+  grid-gap: 25px 30px;
+  grid-template-columns: auto auto auto;
+  margin: 0 0 30px 0;
+  padding: 0 30px;
 }
 
 menu {
