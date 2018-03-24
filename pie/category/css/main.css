@@ -49,9 +49,10 @@ button[disabled] {
 */
 
 main div {
-  align-items: start;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   display: grid;
+  grid-template-rows: max-content;
+ /* grid-auto-rows: max-content;*/
   padding: 20px;
   text-align: center;
 }
@@ -83,10 +84,10 @@ h1 {
 }
 
 h2 {
-  align-self: start;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
+/*  min-height: 3em;*/
   margin: 0 0 10px 0;
   padding: 0;
 }
@@ -124,7 +125,7 @@ main {
   background-color: white;
   display: grid;
   grid-gap: 25px 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto;
   margin: 0 0 30px 0;
   padding: 0 30px;
 }
@@ -167,3 +168,22 @@ menu svg {
   fill: white;
   width: 28px;
 }
+
+@media all and (min-width: 420px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 750px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
