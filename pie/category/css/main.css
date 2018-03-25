@@ -1,5 +1,5 @@
 a#basket {
-  justify-self: end;
+  margin: auto;
   text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
   display: grid;
   grid-template-columns: 100px auto 100px;
-  padding: 20px 30px;
+  padding: 20px 0px;
   position: sticky;
   top: 0;
 }
@@ -150,9 +150,8 @@ main {
 }
 
 header menu {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  align-self: start;
 }
 
 p {
