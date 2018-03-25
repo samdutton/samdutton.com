@@ -1,5 +1,5 @@
 a#basket {
-  margin: auto;
+  justify-self: end;
 }
 
 footer a {
@@ -70,8 +70,8 @@ header {
   background-color: #1976D2;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
   display: grid;
-  grid-template-columns: 80px auto 80px;
-  padding: 20px 0;
+  grid-template-columns: 100px auto 100px;
+  padding: 20px 30px;
   position: sticky;
   top: 0;
 }
@@ -106,7 +106,6 @@ input#search {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 0 40px;
   padding: 5px;
 }
 
@@ -132,9 +131,10 @@ main {
   padding: 0 30px;
 }
 
-menu {
-  margin: auto;
+header menu {
+  margin: 0;
   padding: 0;
+  align-self: start;
 }
 
 p {
