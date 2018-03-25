@@ -106,6 +106,7 @@ input#search {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  margin: 0 40px;
   padding: 5px;
 }
 
