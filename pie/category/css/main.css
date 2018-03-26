@@ -72,7 +72,7 @@ main div {
   display: grid;
   grid-template-rows: max-content;
  /* grid-auto-rows: max-content;*/
-  padding: 20px;
+  padding: 0 0 20px 0;
   text-align: center;
 }
 
@@ -108,13 +108,12 @@ h2 {
   line-height: 1.3em;
 /*  min-height: 3em;*/
   margin: 0 0 13px 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 main img {
-  border: 1px solid #ddd;
   margin: 0 0 20px 0;
-  max-width: 100%;
+  width: 100%;
 }
 
 input#search {
