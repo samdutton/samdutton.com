@@ -5,13 +5,13 @@
 <head>
 
 <meta charset="utf-8" />
-<meta name="keywords" content="track element, html5, video, audio, accessibility, Sam Dutton" /> 
-<meta name="Description" content="The HTML5 track element provides a simple, standardised way to add subtitles, captions, screen reader descriptions, chapters and timed metadata to video and audio." /> 
+<meta name="keywords" content="track element, html5, video, audio, accessibility, Sam Dutton" />
+<meta name="Description" content="The HTML5 track element provides a simple, standardised way to add subtitles, captions, screen reader descriptions, chapters and timed metadata to video and audio." />
 
 <title>Track element demo</title>
 
 <!-- jQuery files for autocomplete input#searchInput -->
-<link type="text/css" href="css/lib/jquery-ui/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+<link type="text/css" href="css/lib/jquery-ui/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
 <script type="text/javascript" src="js/lib/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery-ui-1.8.16.custom.min.js"></script>
 
@@ -24,17 +24,20 @@
 <link rel="stylesheet" href="css/lib/colorbox/colorbox.css" />
 <script src="js/lib/jquery.colorbox.js"></script>
 
-<link type="text/css" href="css/track.css" rel="stylesheet" />	
+<link type="text/css" href="css/track.css" rel="stylesheet" />
 <script src="js/track.js"></script>
 <script src="js/carousel.js"></script>
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script> 
-<script type="text/javascript"> 
-_uacct = "UA-2630780-1";
-if (typeof urchinTracker != "undefined") {
-	urchinTracker();
-}
-</script> 
+<script>
+window.ga = window.ga || function() {
+  (ga.q=ga.q||[]).push(arguments);
+};
+ga.l=+new Date;
+ga('create', 'UA-2630780-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 </head>
 
@@ -60,13 +63,13 @@ if (typeof urchinTracker != "undefined") {
 		<track label="English subtitles" kind="subtitles" srclang="en" src="tracks/treeOfLife-subtitles-en.vtt" default />
 		<track label="Metadata" kind="metadata" srclang="en" src="tracks/treeOfLife-metadata-en.vtt" default />
 	</video>
-	
+
 	<div id="searchContainer" class="trackSupported">
 		<label for="searchInput">Search subtitles: </label>
 		<input id="searchInput" autofocus />
 		<div id="searchHint">Enter text to find subtitles, then select a result to move to that point in the video.</div>
 	</div>
-	
+
 	<div id="carouselContainer" class="trackSupported">
 		<ul id="carousel" class="jcarousel-skin-tango">
 			<!-- Content loaded dynamically -->
