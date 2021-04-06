@@ -1,6 +1,8 @@
 /* Copyright 2021 Google LLC.
 SPDX-License-Identifier: Apache-2.0 */
 
+console.log('hello!');
+
 const cohortIdEl = document.getElementById('cohort-id');
 const cohortVersionEl = document.getElementById('cohort-version');
 const completionTimeEl = document.getElementById('completion-time');
