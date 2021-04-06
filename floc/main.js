@@ -25,7 +25,7 @@ async function getCohortId() {
   } catch(error) {
     console.log(error);
     ++numTries;
-    if (numTries > 50) {
+    if (numTries > 100) {
       cohortIdEl.textContent = cohortVersionEl.textContent = 'not available.';
       clearInterval(intervalID);
     }
