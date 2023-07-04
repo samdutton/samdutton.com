@@ -1,2 +1,3 @@
-# samdutton.com
-Personal website for Sam Dutton
+# [samdutton.com](https://samdutton.com)
+
+Website for Sam Dutton.
